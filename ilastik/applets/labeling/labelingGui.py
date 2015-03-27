@@ -579,7 +579,7 @@ class LabelingGui(LayerViewerGui):
             self._labelControlUi.labelListModel[i].name = n
                 
         if hasattr(self._labelControlUi, "AddLabelButton"):
-            self._labelControlUi.AddLabelButton.setEnabled(numLabels < self.maxLabelNumber)
+            self._labelControlUi.AddLabelButton.setEnabled(numLabels < 15)
 
     def _addNewLabel(self):
         QApplication.setOverrideCursor(Qt.WaitCursor)
